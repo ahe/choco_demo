@@ -1,0 +1,55 @@
+<h1>Listing posts</h1>
+
+<% if(_.isEmpty(posts)) { %>
+  Sorry, we don't have any post yet!
+<% } %>
+
+<table>
+  <thead>
+    
+      <th>CreatedAt</th>
+    
+      <th>Author</th>
+    
+      <th>Title</th>
+    
+      <th>UpdatedAt</th>
+    
+      <th>Id</th>
+    
+      <th>Content</th>
+    
+    <th>Actions</th>
+  </thead>
+  <tbody>
+    <% $.each(posts, function(i, post) { %>
+      <tr id="post_<%= post.id() %>">
+        
+          <td><%= post.attr('created_at') %></td>
+        
+          <td><%= post.attr('author') %></td>
+        
+          <td><%= post.attr('title') %></td>
+        
+          <td><%= post.attr('updated_at') %></td>
+        
+          <td><%= post.attr('id') %></td>
+        
+          <td><%= post.attr('content') %></td>
+        
+        <td>
+          <a href="#/posts/<%= post.id() %>">Permalink</a>
+          <a href="#/posts/edit/<%= post.id() %>">Edit</a>
+          <a href="#/posts/<%= post.id() %>" verb="delete" confirm="Are you sure?">Delete</a>          
+        </td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+
+<br/>
+<br/>
+<a href="#/posts/new">Add a new post</a>
+<br/>
+<br/>
+<a href="#" id="test_link">Hey, click me, I'm a simple test!</a>

@@ -1,0 +1,44 @@
+<h1>Add a new post</h1>
+<form action="#/posts" method="post">
+  
+    
+      <p>
+        <label>CreatedAt</label><br/>
+        <input type="text" name="post[created_at]"/>
+      </p>
+    
+  
+    
+      <p>
+        <label>Author</label><br/>
+        <input type="text" name="post[author]"/>
+      </p>
+    
+  
+    
+      <p>
+        <label>Title</label><br/>
+        <input type="text" name="post[title]"/>
+      </p>
+    
+  
+    
+      <p>
+        <label>UpdatedAt</label><br/>
+        <input type="text" name="post[updated_at]"/>
+      </p>
+    
+  
+    
+  
+    
+      <p>
+        <label>Content</label><br/>
+        <input type="text" name="post[content]"/>
+      </p>
+    
+  
+  <p>
+    <input type="submit" value="Add" />
+  </p>
+</form>

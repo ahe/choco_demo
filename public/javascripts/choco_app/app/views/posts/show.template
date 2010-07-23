@@ -1,0 +1,40 @@
+
+  <p>
+    <label>CreatedAt</label>
+    <br/>
+    <%= post.attr('created_at') %>
+  </p>
+
+  <p>
+    <label>Author</label>
+    <br/>
+    <%= post.attr('author') %>
+  </p>
+
+  <p>
+    <label>Title</label>
+    <br/>
+    <%= post.attr('title') %>
+  </p>
+
+  <p>
+    <label>UpdatedAt</label>
+    <br/>
+    <%= post.attr('updated_at') %>
+  </p>
+
+  <p>
+    <label>Id</label>
+    <br/>
+    <%= post.attr('id') %>
+  </p>
+
+  <p>
+    <label>Content</label>
+    <br/>
+    <%= post.attr('content') %>
+  </p>
+
+<br/>
+<br/>
+<a href="#/posts">Back to index</a>

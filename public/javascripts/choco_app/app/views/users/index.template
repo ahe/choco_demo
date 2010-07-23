@@ -1,0 +1,48 @@
+<h1>Listing users</h1>
+
+<% if(_.isEmpty(users)) { %>
+  Sorry, we don't have any user yet!
+<% } %>
+
+<table>
+  <thead>
+    
+      <th>CreatedAt</th>
+    
+      <th>Pseudo</th>
+    
+      <th>UpdatedAt</th>
+    
+      <th>Id</th>
+    
+      <th>Email</th>
+    
+    <th>Actions</th>
+  </thead>
+  <tbody>
+    <% $.each(users, function(i, user) { %>
+      <tr id="user_<%= user.id() %>">
+        
+          <td><%= user.attr('created_at') %></td>
+        
+          <td><%= user.attr('pseudo') %></td>
+        
+          <td><%= user.attr('updated_at') %></td>
+        
+          <td><%= user.attr('id') %></td>
+        
+          <td><%= user.attr('email') %></td>
+        
+        <td>
+          <a href="#/users/<%= user.id() %>">Permalink</a>
+          <a href="#/users/edit/<%= user.id() %>">Edit</a>
+          <a href="#/users/<%= user.id() %>" verb="delete" confirm="Are you sure?">Delete</a>          
+        </td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+
+<br/>
+<br/>
+<a href="#/users/new">Add a new user</a>

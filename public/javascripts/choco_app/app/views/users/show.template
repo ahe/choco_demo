@@ -1,0 +1,34 @@
+
+  <p>
+    <label>CreatedAt</label>
+    <br/>
+    <%= user.attr('created_at') %>
+  </p>
+
+  <p>
+    <label>Pseudo</label>
+    <br/>
+    <%= user.attr('pseudo') %>
+  </p>
+
+  <p>
+    <label>UpdatedAt</label>
+    <br/>
+    <%= user.attr('updated_at') %>
+  </p>
+
+  <p>
+    <label>Id</label>
+    <br/>
+    <%= user.attr('id') %>
+  </p>
+
+  <p>
+    <label>Email</label>
+    <br/>
+    <%= user.attr('email') %>
+  </p>
+
+<br/>
+<br/>
+<a href="#/users">Back to index</a>

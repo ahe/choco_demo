@@ -1,0 +1,37 @@
+<h1>Edit a user</h1>
+<form action="#/users/update/<%= user.id() %>" method="put">
+  
+    
+      <p>
+        <label>CreatedAt</label><br/>
+        <input type="text" name="user[created_at]" value="<%= user.attr('created_at') %>"/>
+      </p>
+    
+  
+    
+      <p>
+        <label>Pseudo</label><br/>
+        <input type="text" name="user[pseudo]" value="<%= user.attr('pseudo') %>"/>
+      </p>
+    
+  
+    
+      <p>
+        <label>UpdatedAt</label><br/>
+        <input type="text" name="user[updated_at]" value="<%= user.attr('updated_at') %>"/>
+      </p>
+    
+  
+    
+  
+    
+      <p>
+        <label>Email</label><br/>
+        <input type="text" name="user[email]" value="<%= user.attr('email') %>"/>
+      </p>
+    
+  
+  <p>
+    <input type="submit" value="Update" />
+  </p>
+</form>

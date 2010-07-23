@@ -1,0 +1,37 @@
+<h1>Add a new user</h1>
+<form action="#/users" method="post">
+  
+    
+      <p>
+        <label>CreatedAt</label><br/>
+        <input type="text" name="user[created_at]"/>
+      </p>
+    
+  
+    
+      <p>
+        <label>Pseudo</label><br/>
+        <input type="text" name="user[pseudo]"/>
+      </p>
+    
+  
+    
+      <p>
+        <label>UpdatedAt</label><br/>
+        <input type="text" name="user[updated_at]"/>
+      </p>
+    
+  
+    
+  
+    
+      <p>
+        <label>Email</label><br/>
+        <input type="text" name="user[email]"/>
+      </p>
+    
+  
+  <p>
+    <input type="submit" value="Add" />
+  </p>
+</form>
