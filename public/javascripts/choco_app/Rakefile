@@ -18,6 +18,7 @@ namespace :choco do
   	end
   end
   
+  desc "Compress all your JS files into lib/compressed.js"
   task :deploy do
     system 'jim compress lib/compressed.js'
   end

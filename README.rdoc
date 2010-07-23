@@ -1,0 +1,17 @@
+= Choco Demo
+
+This Rails 3 project is a sample app using the Choco Javascript framework (http://github.com/ahe/choco).
+
+The Choco app leaves in public/javascripts/choco_app
+
+== Installation
+
+  $ gem install choco
+  $ git clone http://github.com/ahe/choco_demo.git
+  $ cd choco_demo
+  $ rake db:setup
+  $ cd public/javascripts/choco_app
+  $ rake choco:js:install
+  $ rails s
+
+Open http://localhost:3000/javascripts/choco_app/index.html in your browser.
